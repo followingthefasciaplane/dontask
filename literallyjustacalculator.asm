@@ -1,3 +1,9 @@
+; nasm -f elf32 literallyjustacalculator.asm
+; ld -m elf_i386 -o literallyjustacalculator literallyjustacalculator.o
+; ./literallyjustacalculator
+
+; x86
+
 section .data
     prompt1 db 'Enter first number: '
     prompt1_len equ $ - prompt1
